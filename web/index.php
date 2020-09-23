@@ -27,7 +27,7 @@ $app->post('/enviarDato', function (Request $request) use ($app){
   return $request;
 });
 
-$app -> post('/modificarDato', funcion(Request $request) use ($app){
+$app->post('/modificarDato', funcion(Request $request) use ($app){
       $DatoCorrecto = $request->get('DatoCorrecto');
       $DatoCorrecto = (int)$DatoCorecto + 10;
       return $DatoCorrecto;
