@@ -22,5 +22,15 @@ $app->get('/', function() use($app) {
   return $app['twig']->render('index.twig');
 });
 
+$app->post('/enviarDato', function (Request $request) use ($app){
+  return $request;
+});
+
+$app->post('/modificarDato', function(Request $request) use ($app){
+      $DatoCorrecto = $request->get('DatoCorrecto');
+      $DatoCorrecto = (int)$DatoCorecto + 10;
+      return $DatoCorrecto;
+
+});
 
 $app->run();
