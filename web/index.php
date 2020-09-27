@@ -30,13 +30,6 @@ $app->get('/', function() use($app) {
   return $app['twig']->render('index.twig');
 });
 
-$app->post('/enviarDato', function(Request $request)use ($app){
-    $temperatura = $request->get('tempeHouse');
-      return $app['twig']->render('index.twig'), array(
-          'dato'=> $temperatura,
-      ));
-});
-
 $app->post('/modificarDato', function(Request $request) use ($app){
       $DatoCorrecto = $request->get('DatoCorrecto');
       $DatoCorrecto = (int)$DatoCorecto + 10;
