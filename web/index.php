@@ -22,7 +22,7 @@ $app->get('/{dato}', function($dato) use($app) {
   return $app['twig']->render('index.twig');
 });
 
-$app->get('enviarDato/{dato}', function($dato) use($app){
+$app->get('/enviarDato/{dato}', function($dato) use($app){
   $app['monolog']->addDebug('logging output.');
   return $app['twig']->render('index.twig');
 });
