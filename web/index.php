@@ -17,14 +17,6 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
 
 // Our web handlers
 
-$app->get('/{dato}', function($dato) use($app){
-  $app['monolog']->addDebug('logging output.');
-  return $app['twig']->render('index.twig', array(
-      'dato' => $dato,
-      ));
-)};
-
-
 $app->get('/', function() use($app) {
   $app['monolog']->addDebug('logging output.');
   return $app['twig']->render('index.twig');
