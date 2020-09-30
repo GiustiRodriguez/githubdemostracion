@@ -39,8 +39,8 @@ $app->post('/obtenerDato', function (Request $request) use ($app) {
 });
 
 //Ruta de demostración, se recibe(n) dato(s) y se manipulan
-$app->post('/enviarArduino', function (Request $request) use ($app) {
-   	return "OK";
+$app->post('/iluminacionON', function (Request $request) use ($app) {
+   	return "Encendido";
 });
 
 $app->run();
