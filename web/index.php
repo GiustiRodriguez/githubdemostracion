@@ -32,7 +32,7 @@ $app->post('/enviarDato', function (Request $request) use ($app) {
 
 
 //Ruta de demostración, se recibe(n) dato(s) y se manipulan
-$app->post('/obtenerDato', function (Request $request) use ($app) {
+$app->post('/helloIA', function (Request $request) use ($app) {
    	$nombre = $request->get('nombre');
 	  $respuesta = "Hello " .$nombre;
    	return $respuesta;
