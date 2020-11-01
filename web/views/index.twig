@@ -1,34 +1,52 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<div class="jumbotron text-center">
-  <div class="container">
-        <img src="/images/monitor.png">
-      <h1>Smart Home 2.0</h1>
-    <p>Bienvenidos&nbsp;</p>
+<div class="jumbotron text-center" style="background-image: url('/images/SmHome.jpg'); ">
+  <div class="container" >
+    <a href="/" class="lang-logo">
+      <img src="/images/Logo.jpg">
+    </a>
+    
+    <p>Esta sera una pagina que funsionara como un dashboard de los estados de los diferentes sensores que se instalaran en la casa.</p>
+    <a type="button" class="btn btn-lg btn-default" href="https://previews.123rf.com/images/macrovector/macrovector1604/macrovector160403462/55220555-infograf%C3%ADa-de-las-casas-inteligentes-con-las-estad%C3%ADsticas-de-uso-ilustraci%C3%B3n-vectorial-tecnolog%C3%ADas-electr%C3%B3nicas.jpg"><span class="glyphicon glyphicon-flash"></span> Estadisticas</a>
+    <a type="button" class="btn btn-lg btn-primary" href="pca.edu.co/wp/"><span class="glyphicon glyphicon-download"></span> Quienes somos!</a>
   </div>
 </div>
 <div class="container">
-   <div class="alert alert-info text-center" role="alert">
-    To deploy your own copy, and learn the fundamentals of the Heroku platform, head over to the <a href="https://devcenter.heroku.com/articles/getting-started-with-php" class="alert-link">Getting Started with PHP on Heroku</a> tutorial.
+  <div class="alert alert-info text-center" role="alert">
+    Siempre en contacto con tu hogar!
   </div>
   <hr>
-    <div class="row">
-      <div class="col-md-6">
-      <h3><span class="glyphicon glyphicon-signal"></span> How this sample app works</h3>
+  <div class="row">
+    <div class="col-md-6">
+      <h3><span class="glyphicon glyphicon-info-sign"></span> Habitaciones</h3>
       <ul>
-        <li>This app was deployed to Heroku, either using Git or by using <a href="https://github.com/heroku/php-getting-started">Heroku Button</a> on the repository.</li>
+        <li>Habitacion # 1</li>
 
-        <li>When Heroku received the source code, it fetched all the dependencies in the <a href="https://github.com/heroku/php-getting-started/blob/master/composer.json">composer.json</a>, creating a deployable slug.</li>
-        <li>The platform then spins up a dyno, a lightweight container that provides an isolated environment in which the slug can be mounted and executed.</li>
-        <li>You can scale your app, manage it, and deploy over <a href="https://addons.heroku.com/">150 add-on services</a>, from the Dashboard or CLI.</li>
+        <li>Habitacion # 2</li>
+        <li>Habitacion # 3</li>
+        <li>Habitacion # 4</li>
+        
+      </ul>
+      <iframe width="460" height="315" src="https://www.youtube.com/watch?v=ABrjdyavqkI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="col-md-6">
+      <h3><span class="glyphicon glyphicon-link"></span> Living Room</h3>
+      <ul>
+        <li>1--------------</li>
+        <li>2--------------</li>
+        <ul>
+          <li><code>3--------------</code> - </li>
+          <li><code>4--------------</code> - </li>
+          <li><code>5--------------</code> - </li>
+          <li>6--------------</li>
         </ul>
-        </div>
-        <h3>¡Espacio de prueba, actualmente en construcción!</h3><p><img src="/images/AVISO.gif" alt="Funny Image" style="width: 300px;" class="fr-fic fr-dib"></p><p><br></p>
-      </div>
-    </div> <!-- row -->
+      </ul>
+      
+    </div>
+  </div> <!-- row -->
    <div class="alert alert-info text-center" role="alert">
-    Please do work through the Getting Started guide, even if you do know how to build such an application.  The guide covers the basics of working with Heroku, and will familiarize you with all the concepts you need in order to build and deploy your own apps.
+    Pagina en construccion...
   </div>
 </div>
 

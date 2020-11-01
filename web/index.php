@@ -32,15 +32,15 @@ $app->post('/enviarDato', function (Request $request) use ($app) {
 
 
 //Ruta de demostración, se recibe(n) dato(s) y se manipulan
-$app->post('/helloIA', function (Request $request) use ($app) {
+$app->post('/modificarDato', function (Request $request) use ($app) {
    	$nombre = $request->get('nombre');
-	  $respuesta = "Hello " .$nombre;
+	$respuesta = "SmartHome:  " .$nombre;
    	return $respuesta;
 });
 
 //Ruta de demostración, se recibe(n) dato(s) y se manipulan
-$app->post('/iluminacionON', function (Request $request) use ($app) {
-   	return "Encendido";
+$app->post('/postPruebaJALB', function (Request $request) use ($app) {
+   	return "Post SmartHome 2.0";
 });
 
 $app->run();
